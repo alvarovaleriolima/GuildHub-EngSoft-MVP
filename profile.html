@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GuildHub - Perfil</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<header class="topbar">
+  <img src="logo.svg" alt="logo" class="logo small">
+  <nav><a href="home.html" class="nav-link">Home</a> <a href="messages.html" class="nav-link">Mensagens</a> <a href="profile.html" class="nav-link">Perfil</a> <a href="#" class="nav-link" id="logoutBtn2">Sair</a></nav>
+</header>
+
+<section class="container" style="justify-content:center">
+  <main class="card profile-card" style="width: 420px; max-width: 100%;">
+    <h2>Editar Perfil</h2>
+    <label>Nome público</label>
+    <input id="profName">
+    <label>Bio</label>
+    <textarea id="profBio"></textarea>
+    <div class="row">
+      <button class="btn" id="btnSaveProfile">Salvar</button>
+    </div>
+
+    <h3 style="margin-top:16px">Solicitações enviadas</h3>
+    <div id="sentReqs" class="list"></div>
+  </main>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

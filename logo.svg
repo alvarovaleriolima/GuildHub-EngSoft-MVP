@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00ffd5"></stop>
+      <stop offset="1" stop-color="#0066ff"></stop>
+    </linearGradient>
+    <style>
+      .title { font: bold 20px/1 'Segoe UI', Roboto, sans-serif; fill: url(#g); }
+    </style>
+  </defs>
+  <!-- controller icon -->
+  <rect x="6" y="12" rx="10" ry="10" width="120" height="56" fill="#0b1220"></rect>
+  <circle cx="34" cy="34" r="6" fill="#00ffd5"></circle>
+  <rect x="40" y="28" width="6" height="12" rx="2" fill="#00ffd5"></rect>
+  <circle cx="84" cy="30" r="6" fill="#0066ff"></circle>
+  <circle cx="98" cy="24" r="3" fill="#00ffd5"></circle>
+  <circle cx="108" cy="36" r="3" fill="#00ffd5"></circle>
+  <!-- stylized PC monitor -->
+  <rect x="140" y="8" width="48" height="34" rx="4" fill="#0b1220" stroke="url(#g)" stroke-width="2"></rect>
+  <rect x="150" y="14" width="28" height="20" rx="2" fill="#08121a"></rect>
+  <path d="M156 44 h20 l-6 8 h-8 z" fill="#08121a"></path>
+  <!-- text -->
+  <text x="12" y="70" class="title">GuildHub</text>
+</svg>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GuildHub - Entrar</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<header class="topbar">
+  <img src="logo.svg" alt="GuildHub logo" class="logo">
+  <nav><a href="index.html" class="nav-link">Entrar</a></nav>
+</header>
+
+<main class="card auth-card" id="authArea">
+  <section id="loginPanel">
+    <h2>Entrar no GuildHub</h2>
+    <input id="loginUser" placeholder="Usuário" autofocus>
+    <input id="loginPass" type="password" placeholder="Senha">
+    <div class="row">
+      <button class="btn" id="btnLogin">Entrar</button>
+      <button class="btn ghost" id="btnShowRegister">Cadastrar</button>
+    </div>
+    <div id="authMsg" class="hint"></div>
+  </section>
+
+  <section id="registerPanel" class="hidden">
+    <h2>Cadastro</h2>
+    <input id="regUser" placeholder="Usuário">
+    <input id="regPass" type="password" placeholder="Senha (mín 4)">
+    <input id="regName" placeholder="Nome exibido (opcional)">
+    <div class="row">
+      <button class="btn" id="btnCreate">Criar conta</button>
+      <button class="btn ghost" id="btnCancelReg">Cancelar</button>
+    </div>
+    <div class="hint">Cadastro salvo localmente no seu navegador (localStorage).</div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GuildHub - Mensagens</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<header class="topbar">
+  <img src="logo.svg" alt="logo" class="logo small">
+  <nav><a href="home.html" class="nav-link">Home</a> <a href="messages.html" class="nav-link">Mensagens</a> <a href="profile.html" class="nav-link">Perfil</a> <a href="#" class="nav-link" id="logoutBtn3">Sair</a></nav>
+</header>
+
+<main class="container">
+  <aside class="sidebar card">
+    <h3>Conversas</h3>
+    <div id="convoList" class="list"></div>
+  </aside>
+  <main class="maincard card">
+    <h3 id="chatWith">Selecione uma conversa</h3>
+    <div id="messagesPane" class="messagesPane"></div>
+    <div class="messageBox" style="display:flex;gap:8px;margin-top:8px">
+      <input id="msgText" placeholder="Escreva uma mensagem..." style="flex:1"/>
+      <button class="btn" id="btnSend">Enviar</button>
+    </div>
+  </main>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

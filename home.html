@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GuildHub - Home</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<header class="topbar">
+  <img src="logo.svg" alt="logo" class="logo small">
+  <nav><a href="home.html" class="nav-link">Home</a> <a href="messages.html" class="nav-link">Mensagens</a> <a href="profile.html" class="nav-link">Perfil</a> <a href="#" class="nav-link" id="logoutBtn">Sair</a></nav>
+</header>
+
+<section class="container">
+  <aside class="sidebar card">
+    <h3>Amigos <span id="notifFriends" class="small"></span></h3>
+    <div id="friendsList" class="list"></div>
+
+    <h4>Solicitações</h4>
+    <div id="reqList" class="list"></div>
+
+    <div style="margin-top:12px">
+      <input id="searchUser" placeholder="Pesquisar usuário"/>
+      <button class="btn small" id="btnSearch">Procurar / Enviar solicitação</button>
+    </div>
+  </aside>
+
+  <main class="maincard card">
+    <div class="post-creator">
+      <textarea id="newPost" placeholder="Compartilhe algo no GuildHub..."></textarea>
+      <div class="row" style="margin-top:8px">
+        <button class="btn" id="btnPublish">Publicar</button>
+      </div>
+    </div>
+
+    <h3 style="margin-top:18px">Feed</h3>
+    <div id="feed"></div>
+  </main>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

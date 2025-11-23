@@ -1,0 +1,22 @@
+# Diretórios de Módulo (Node.js)
+/node_modules
+/backend/node_modules
+/frontend/node_modules 
+
+# Logs e Arquivos de Build
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+/dist
+/build
+
+# Variáveis de Ambiente e Arquivos Temporários
+.env
+.DS_Store
+*.tmp
+
+# Arquivos Docker
+# Mantenha o docker-compose.yml, mas ignore arquivos de volume e logs
+*.log
+!docker-compose.yml

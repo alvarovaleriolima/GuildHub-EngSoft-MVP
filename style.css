@@ -167,11 +167,27 @@ textarea {
   margin-top: 8px;
 }
 @media (max-width: 800px) {
+  /* A classe container deve empilhar a sidebar e o maincard */
   .container {
     flex-direction: column;
     padding: 12px;
   }
-  .sidebar {
+  /* Garante que a sidebar e o maincard ocupem a largura total */
+  .sidebar,
+  .maincard {
     width: 100%;
+    flex: none; /* Remove o flex: 1 para controle total da largura */
+  }
+  
+  /* Ajuste para o cartão de autenticação em telas muito pequenas */
+  .auth-card,
+  .profile-card {
+    width: 95%; /* Reduz a largura máxima para se adequar a telas pequenas */
+    margin: 30px auto;
+  }
+  
+  /* Ajuste a exibição dos botões no mobile */
+  .row {
+    flex-wrap: wrap;
   }
 }
